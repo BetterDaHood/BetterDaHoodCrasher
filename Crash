@@ -1,3 +1,22 @@
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+while Players.LocalPlayer == nil do task.wait() end
+
+local PLAYER = Players.LocalPlayer
+
+for count = 0, 9 do
+    if string.gmatch(script_key, count) then
+        StarterGui:SetCore("SendNotification", {
+            Title = "Key Migration Required",
+            Text = "Your key is outdated! Please see #prem-announcements and migrate your key",
+            Duration = 30,
+            Button1 = "Okay",
+        })
+        break
+    end
+end
+
 ([[
                 This script has been licensed using Luarmor
             Unauthorized distribution of this script is forbidden.
