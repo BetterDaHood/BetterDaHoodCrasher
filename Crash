@@ -9,7 +9,7 @@ for count = 0, 9 do
     if string.gmatch(script_key, count) then
         StarterGui:SetCore("SendNotification", {
             Title = "Key Migration Required",
-            Text = "Your key is outdated! Please see #prem-announcements and migrate your key",
+            Text = "Your key is outdated! Please see #prem-anc and migrate your key",
             Duration = 30,
             Button1 = "Okay",
         })
