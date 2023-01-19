@@ -6,7 +6,7 @@ while Players.LocalPlayer == nil do task.wait() end
 local PLAYER = Players.LocalPlayer
 
 for count = 0, 9 do
-    if string.gmatch(script_key, count) then
+    if string.find(script_key, tostring(count)) then
         StarterGui:SetCore("SendNotification", {
             Title = "Key Migration Required",
             Text = "Your key is outdated! Please see #prem-anc and migrate your key",
