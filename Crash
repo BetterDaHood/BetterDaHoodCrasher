@@ -19,6 +19,12 @@ for count = 0, 9 do
     end
 end
 
+StarterGui:SetCore("SendNotification", {
+    Title = "Crashing Patched",
+    Text = "Crashing is currently patched, not-recommended",
+    Duration = 30,
+})
+
 ([[
                 This script has been licensed using Luarmor
             Unauthorized distribution of this script is forbidden.
